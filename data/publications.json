@@ -1,0 +1,59 @@
+[
+  {
+    "type": "Book",
+    "year": 2025,
+    "authors": "Mojtaba Soltanalian",
+    "title": "Rosa Universalis: A Modern Codex of Rose Windows",
+    "venue": "Art/Design Monograph",
+    "notes": "Original artworks; Persian translation in progress",
+    "links": [
+      {
+        "label": "Cover",
+        "url": "assets/rosa_universalis.png"
+      }
+    ]
+  },
+  {
+    "type": "Book",
+    "year": 2022,
+    "authors": "M. A. Kerahroodi, M. Soltanalian, P. Babu, B. Shankar",
+    "title": "Signal Design for Modern Radar Systems",
+    "venue": "Artech House",
+    "links": [
+      {
+        "label": "Publisher",
+        "url": "https://us.artechhouse.com/Signal-Design-for-Modern-Radar-Systems-P2306.aspx"
+      }
+    ]
+  },
+  {
+    "type": "Journal",
+    "year": 2025,
+    "authors": "T. Esmaeilbeig*, K. V. Mishra, M. Soltanalian",
+    "title": "Beyond Diagonal RIS: Key to Next-Generation Integrated Sensing and Communications?",
+    "venue": "IEEE Signal Processing Letters 32:216\u2013220"
+  },
+  {
+    "type": "Journal",
+    "year": 2024,
+    "authors": "A. Eamaz*, F. Yeganegi*, M. Soltanalian",
+    "title": "Matrix Completion from One-Bit Dither Samples",
+    "venue": "IEEE Transactions on Signal Processing",
+    "notes": "in press"
+  },
+  {
+    "type": "Journal",
+    "year": 2024,
+    "authors": "A. Eamaz*, F. Yeganegi*, D. Needell, M. Soltanalian",
+    "title": "Harnessing the Power of Sample Abundance: Theoretical Guarantees and Algorithms for Accelerated One-Bit Sensing",
+    "venue": "IEEE Transactions on Information Theory",
+    "notes": "in press"
+  },
+  {
+    "type": "Conference",
+    "year": 2025,
+    "authors": "A. Eamaz*, F. Yeganegi*, M. Soltanalian",
+    "title": "Sample Abundance for Signal Processing: A Brief Introduction",
+    "venue": "IEEE CAMSAP 2025 (Punta Cana)"
+  }
+]
