@@ -1,247 +1,259 @@
-<!doctype html><html lang="en">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mojtaba Soltanalian</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mojtaba Soltanalian | University of Illinois Chicago</title>
+<meta name="description" content="Mojtaba Soltanalian, Professor at the University of Illinois Chicago. Research in mathematical foundations of intelligence, optimization, AI assurance, and radar sensing.">
+<link rel="canonical" href="https://msoltanalian.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mojtaba Soltanalian">
+<meta property="og:description" content="Research in learning, computation, and reliable decision-making.">
+<meta property="og:url" content="https://msoltanalian.github.io/">
+<meta property="og:image" content="https://msoltanalian.github.io/assets/profile.png">
+<style>
+:root{color-scheme:light;--paper:#fcfbf9;--ink:#242a30;--muted:#49545e;--accent:#234b67;--line:#d7d9d6;--measure:72ch;--serif:Georgia,'Times New Roman',serif;--sans:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1rem}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:.18em}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+a,summary{overflow-wrap:break-word}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3,p,ul,dl{margin-top:0}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.16;letter-spacing:-.02em}
+h1{font-size:clamp(2.65rem,4.6vw,3.7rem);margin:0 0 .55rem}
+h2{font-size:2rem;margin-bottom:1rem}
+h3{font-size:1.38rem;margin-bottom:.45rem}
+p{margin-bottom:.85rem}
+p:last-child{margin-bottom:0}
+.wrap{width:min(100% - 64px,1080px);margin-inline:auto}
+.site-header{border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:1.25rem}
+.site-label{font-size:.84rem;font-weight:600;color:var(--ink);text-decoration:none}
+.nav{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem 1.35rem;padding:0;margin:0;font-size:.88rem}
+.nav a{color:var(--ink);text-decoration:none}
+.nav a:hover{text-decoration:underline}
+.hero{padding-block:3.1rem 2.7rem;display:grid;grid-template-columns:minmax(0,1fr) 252px;align-items:start;gap:3.5rem}
+.eyebrow,.meta,.section-note{font-size:.85rem;color:var(--muted)}
+.eyebrow{font-weight:600;letter-spacing:.055em;text-transform:uppercase;margin-bottom:.65rem}
+.subtitle{font-family:var(--serif);font-size:1.37rem;color:var(--accent);line-height:1.4;margin-bottom:1.25rem}
+.roles{font-size:.97rem;margin-bottom:.6rem}
+.affiliations{font-size:.91rem;color:var(--muted);margin-bottom:1.15rem}
+.hero-talks{margin:0 0 1.3rem;padding:.65rem 0 .7rem;border-block:1px solid var(--line);font-size:.88rem}
+.hero-talks h2{font-family:var(--sans);font-size:.82rem;font-weight:600;letter-spacing:0;color:var(--muted);margin:0 0 .35rem}
+.hero-talks ul{list-style:none;display:flex;flex-wrap:wrap;gap:.25rem 1rem;padding:0;margin:0;line-height:1.6}
+.hero-talks a{white-space:nowrap}
+.hero-copy{max-width:var(--measure);font-size:1.02rem}
+.portrait{margin:0}
+.distinctions{margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--line)}
+.distinctions h2{font-family:var(--sans);font-size:.9rem;font-weight:600;letter-spacing:0;color:var(--ink);margin:0 0 .6rem}
+.distinctions ul{list-style:none;padding:0;margin:0;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.distinctions li+li{margin-top:.5rem}
+
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:53% 39%;background:#e3e2dd}
+.portrait figcaption{font-size:.85rem;color:var(--muted);margin-top:.65rem;line-height:1.55}
+.links{display:flex;flex-wrap:wrap;gap:.45rem 1.2rem;list-style:none;padding:0;margin:1.25rem 0 0;font-size:.92rem;font-weight:550}
+.section{border-top:1px solid var(--line);padding:2.65rem 0}
+.section-head{display:grid;grid-template-columns:230px minmax(0,1fr);gap:2rem;margin-bottom:1.6rem;align-items:baseline}
+.section-head h2{font-size:1.75rem}
+#research .section-head{grid-template-columns:1fr;gap:0}
+#research .section-head h2{font-size:2rem;margin-bottom:.4rem}
+.section-head p{max-width:var(--measure);color:var(--muted);margin-bottom:0}
+.research-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.4rem;row-gap:1.65rem}
+.research-item{border-top:1px solid var(--line);padding-top:1.15rem;min-width:0}
+.research-item p{font-size:1rem;line-height:1.63}
+.research-item .meta{overflow-wrap:anywhere}
+.works{list-style:none;padding:0;margin:.9rem 0 0}
+.works li{font-size:.88rem;line-height:1.5;margin-top:.65rem}
+.works a{font-weight:550}
+.works .meta{display:block;font-size:.81rem;margin-top:.12rem}
+.wide{grid-column:1/-1}
+.book-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.8rem 2.4rem}
+.book{display:grid;grid-template-columns:96px minmax(0,1fr);gap:1.1rem;align-items:start}
+.book img{width:100%;height:132px;object-fit:contain;object-position:top center}
+.book h3{font-size:1.2rem}
+.book p{font-size:.91rem}
+.book .meta{margin-bottom:.3rem}
+.prose{max-width:var(--measure)}
+.two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem}
+.record h3{font-size:1.24rem}
+.record ul{padding-left:1.1rem;font-size:.94rem}
+.record li+li{margin-top:.35rem}
+.record .two-col p{font-size:.96rem;line-height:1.65}
+.folds{margin-top:1.4rem;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);padding:.75rem 0}
+#about .folds details:last-child{border-bottom:0;padding-bottom:0}
+#about.section{padding-bottom:1.5rem}
+summary{cursor:pointer;font-size:.97rem;font-weight:600;color:var(--accent)}
+details>div{margin-top:.75rem;max-width:var(--measure)}
+.archive{list-style:none;padding:0;margin:0}
+.archive li{display:grid;grid-template-columns:5.4rem minmax(0,1fr);gap:.8rem;font-size:.9rem;padding:.42rem 0}
+.archive time{color:var(--muted);font-variant-numeric:tabular-nums}
+.footer{border-top:1px solid var(--line);padding:1.8rem 0 2.5rem;color:var(--muted);font-size:.88rem}
+.footer-inner{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.skip{position:absolute;top:0;left:1rem;transform:translateY(-110%);padding:.5rem;background:var(--paper);z-index:9}
+.skip:focus{transform:none}
+address{font-style:normal}
+#teaching .section-head{align-items:start;margin-bottom:0}
+#teaching .teaching-intro{margin:0 0 1rem;line-height:1.6}
+#teaching .course-list{list-style:none;padding:0;margin:0 0 1.25rem;font-size:.95rem;line-height:1.5}
+#teaching .course-list li{display:grid;grid-template-columns:5.2rem minmax(0,1fr);gap:.55rem;align-items:baseline}
+#teaching .course-list li+li{margin-top:.48rem}
+#teaching .course-code{font-weight:550;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+#teaching .course-materials{font-size:.95rem;line-height:1.5}
+#teaching .course-materials a{font-weight:550}
+#contact .section-head{align-items:start;margin-bottom:0}
+#contact .contact-intro{max-width:60ch;margin:0 0 1.2rem;line-height:1.6}
+#contact address{font-size:.95rem;line-height:1.5;color:var(--muted)}
+#contact .contact-institution{display:block;font-weight:550;color:var(--ink)}
+#contact .contact-postal{display:block;margin-top:.35rem}
+#contact .contact-email{display:block;width:fit-content;margin-top:.95rem;font-size:1rem;font-weight:550;line-height:1.5}
+#contact .links{margin-top:1.25rem;font-weight:500}
+strong{font-weight:650}
+
+@media(max-width:820px){.wrap{width:min(100% - 44px,1080px)}
+.hero{grid-template-columns:minmax(0,1fr) 210px;gap:2rem;padding-block:2.75rem}
+.section-head{grid-template-columns:1fr;gap:0}
+.section-head h2{margin-bottom:.4rem}
+.research-list{column-gap:1.6rem}
+.book-grid{gap:1.5rem}
+.book{grid-template-columns:76px 1fr}
+}
+
+@media(max-width:600px){.wrap{width:calc(100% - 36px)}
+.header-inner{display:block;padding-block:1rem}
+.site-label{display:block;margin-bottom:.55rem}
+.nav{gap:.2rem .3rem;justify-content:space-between}
+.nav a{display:flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;white-space:nowrap}
+.hero{grid-template-columns:1fr;padding-block:2.25rem 2rem;gap:1.5rem}
+.portrait{max-width:230px}
+.distinctions{max-width:36rem}
+.portrait img{aspect-ratio:4/5}
+.research-list,.two-col,.book-grid{grid-template-columns:1fr;gap:1.25rem}
+.section{padding-block:2rem}
+.section-head{margin-bottom:1.2rem}
+.book{grid-template-columns:82px 1fr}
+.archive li{grid-template-columns:4.4rem minmax(0,1fr)}
+.footer{padding-bottom:1.8rem}
+}
+
+@media(max-width:375px){.nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 .35rem}
+.nav a{justify-content:flex-start}
+}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+}
+
+@media print{body{background:white;color:black;font-size:11pt}
+.wrap{width:100%}
+.site-header,.skip,.footer .back{display:none}
+.hero{padding:0 0 1rem;grid-template-columns:1fr 150px;gap:1.5rem}
+.section{padding:1rem 0}
+.distinctions{font-size:9pt}.distinctions ul{font-size:9pt}
+.research-item,.book{break-inside:avoid}
+a{color:black;text-decoration:none}
+.section-head{display:block}
+details{display:none}
+}
+
+</style>
 </head>
-<body>
-<header class="header">
-  <div class="container header-inner">
-<div class="brand">
-	<a href="index.html">
-		<span class="dot"></span>
-	<span>Engineering <em>sensing</em> and <em>learning</em>—from <em>radar waveforms</em> to <em>robust&nbsp;AI</em>.</span>
-
-	</a>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap header-inner">
+<a class="site-label" href="#top">Mojtaba Soltanalian</a>
+<nav aria-label="Main navigation"><ul class="nav"><li><a href="#research">Research</a></li><li><a href="#talks">Talks</a></li><li><a href="#books">Books</a></li><li><a href="#about">About</a></li><li><a href="#teaching">Teaching</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main" class="wrap">
+<section class="hero" aria-labelledby="name">
+<div>
+<p class="eyebrow">University of Illinois Chicago</p>
+<h1 id="name">Mojtaba Soltanalian</h1>
+<p class="subtitle">The mathematics of intelligence and computation</p>
+<p class="roles">Professor of Electrical and Computer Engineering<br>Professor of Computer Science (by courtesy)<br>Director, <a href="https://wave-opt.lab.uic.edu/">WaveOPT Laboratory</a></p>
+<p class="affiliations">ex-Caltech · ex-SnT · Founder, <a href="https://ai-certified.org/">AI-CERTIFIED.ORG</a></p>
+<div class="hero-talks" id="talks" aria-labelledby="talks-title">
+<h2 id="talks-title">Selected research talks</h2>
+<ul><li><a href="https://www.youtube.com/watch?v=oEouihVgSlc" aria-label="ASU — Arizona State University">ASU</a></li><li><a href="https://isl.stanford.edu/colloquium/colloquium_soltanalian.html" aria-label="Stanford University, Information Systems Laboratory">Stanford</a></li><li><a href="2018060518261.jpg" aria-label="Tsinghua University">Tsinghua</a></li><li><a href="https://www.youtube.com/watch?v=9Lpf8GxJYBw" aria-label="USTC — University of Science and Technology of China">USTC</a></li><li><a href="https://www.polyu.edu.hk/eee/news-and-events/events/2026/2026-01-08-research-seminar-on-new-frontiers-in-one-bit-signal-processing-from-sample-abundance/" aria-label="PolyU — The Hong Kong Polytechnic University">PolyU</a></li><li><a href="https://rc.signalprocessingsociety.org/education/sa-twg-webinars/sps_edu_sa_soltanalian_111325" aria-label="IEEE SPS Webinar — IEEE Signal Processing Society">IEEE SPS Webinar</a></li></ul>
 </div>
-    <nav><ul><li>
-  </div>
-</header>
-<main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h1>Mojtaba Soltanalian</h1>
-        
-     
-        
- <div class="tagline">
- 	<p>
- 		I earned the B.Sc. from
- 		<a href="http://en.wikipedia.org/wiki/Sharif_University_of_Technology">Sharif University of Technology</a> (2009) and the Ph.D. in Electrical Engineering (signal processing) from the Department of Information Technology at
- 		<a href="http://www.uu.se/en/">Uppsala University</a> (2014). Prior to UIC, I held research appointments at the
- 		<a href="http://www.caltech.edu/">California Institute of Technology (Caltech)</a> and at
- 		<a href="http://wwwen.uni.lu/snt">SnT</a>, University of Luxembourg.
- 	</p>
- 	
- 	<p>
- 		My research spans optimization, statistical signal processing, and machine learning, with emphasis on principled signal design for sensing and communications, few-bit and mixed-precision techniques, and on the foundations of scalable, reliable, and certifiable AI.
- 	</p>
- 	
- 	<p>
- 		I am a Senior Member of the IEEE; served on the editorial boards of
- 		<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=78">IEEE Transactions on Signal Processing</a>,
- 		<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7">IEEE Transactions on Aerospace and Electronic Systems</a> (Radar Systems), and <a href="https://www.sciencedirect.com/journal/signal-processing">EURASIP's Signal Processing</a>; and chair the
- 		<a href="https://ewh.ieee.org/r4/chicago/sps/">IEEE Signal Processing Society Chicago Chapter</a>. My work has been recognized, among others, with an IEEE Signal Processing Society Young Author Best Paper Award, and the European Association for Signal Processing Best PhD Award.
- 	</p>
- </div>
- 
-        
-        <div class="buttons">
-          <a class="btn" href="https://wave-opt.lab.uic.edu/">WaveOPT Lab</a>
-          <a class="btn" href="https://scholar.google.com/citations?hl=en&user=ak9fao0AAAAJ&view_op=list_works&sortby=pubdate">Publications</a>
-        </div>
-        <hr class="sep">
-       
-      </div>
-      <div class="hero-right">
-        <div class="card"><img src="assets/profile.png" alt="Portrait of Mojtaba Soltanalian" style="border-radius:var(--radius)"></div>
-        <div class="card info-card">
-          <h3></h3>
-          <div class="roles">Professor, Electrical & Computer Engineering<br>Professor, Computer Science (by courtesy)<br>Director, WaveOPT Laboratory <br> University of Illinois Chicago<br> <br>  Chair, IEEE Signal Processing Society Chicago Chapter <br> Founder, AI-CERTIFIED.ORG <br> <br> Office: SEO 1031<br> E-mail: msol@uic.edu </div>
-        </div>
-      </div>
-    </div>
-  </section>
- 
- <section class="section"><div class="container">
- 		<div class="kicker"><h2> Research Overview</div>
- 		
-<div class="buttons">
-	<a class="btn" href="https://www.youtube.com/watch?v=oEouihVgSlc" target="_blank" rel="noopener">Talk at ASU</a>
-	<a class="btn" href="main.pdf" target="_blank" rel="noopener">Talk at Stanford</a>
-	<a class="btn" href="https://www.youtube.com/watch?v=9Lpf8GxJYBw" target="_blank" rel="noopener">Talk at USTC</a>
-	<a class="btn" href="2018060518261.jpg" target="_blank" rel="noopener">Talk at Tsinghua</a>
+<div class="hero-copy">
+<p>I study how the structure of information determines what can be learned, computed, and verified. My work draws on mathematical optimization, information theory, signal processing, and machine learning.</p>
+<p>A central theme of my research is the reliability of intelligent systems. In radar, critical decisions about the physical world depend on the quality of sensing and inference. This same concern motivates my work on AI safety, particularly on mathematical guarantees for learning and computation.</p>
 </div>
-<hr class="sep">
-
-  </div>
+<ul class="links" aria-label="Professional links"><li><a href="https://scholar.google.com/citations?hl=en&amp;user=ak9fao0AAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a></li><li><a href="#about">About</a></li><li><a href="mailto:msol@uic.edu">Email</a></li></ul>
+</div>
+<div class="hero-side"><figure class="portrait"><img src="assets/profile.png" alt="Portrait of Mojtaba Soltanalian" width="1000" height="667"></figure>
+<section class="distinctions" id="distinctions" aria-labelledby="distinctions-title"><h2 id="distinctions-title">Selected distinctions</h2><ul>
+<li>Best PhD Award, European Association for Signal Processing (EURASIP), 2018.</li>
+<li>UIC College of Engineering Faculty Research Award, 2018.</li>
+<li>IEEE Signal Processing Society Young Author Best Paper Award, 2017.</li>
+<li>University of Illinois Faculty Entrepreneurial Leadership Program (FELP), 2025 cohort.</li>
+</ul></section>
+</div>
 </section>
-
-
-  <section class="section"><div class="container">
-		<div class="kicker"><h2>Books & Monographs</div>
-		
-			<table class="imgtable"><tr><td>
-					<a href="https://www.amazon.com/dp/B0FLQ4KJW3"><img src="assets/rosa_universalis.png" alt=" " width="170px" height="170px" /></a>&nbsp; </td>
-					<td align="left"> <a href="https://www.amazon.com/dp/B0FLQ4KJW3"><h3> Rose Window Designs (2025)
-							</h3></a>
-						
-						<p><a href="https://www.amazon.com/dp/B0FLQ4KJW3">Rosa Universalis: A Modern Codex of Rose Windows</a>  <br />
-								Original designs,  <a href="sp_perspective.pdf">	<em> from a signal processing perspective (here).</em>  <br />
-									See the   <a href="https://www.youtube.com/@VisualZentube">	YouTube channel <em>here</em></a>.</p>
-							
-						</td></tr></table>
-					
-		<table class="imgtable"><tr><td>
-					<a href="https://us.artechhouse.com/Signal-Design-for-Modern-Radar-Systems-P2306.aspx"><img src="assets/book_radar.png" alt="" width="170px" height="248px" /></a>&nbsp;</td>
-					<td align="left"> <a href="https://us.artechhouse.com/Signal-Design-for-Modern-Radar-Systems-P2306.aspx"> <h3> Radar Textbook (2022)
-						</h3>
-						<p><a href="https://us.artechhouse.com/Signal-Design-for-Modern-Radar-Systems-P2306.aspx">Signal Design for Modern Radar Systems</p>
-							
-						</td></tr></table>
-				
-				<table class="imgtable"><tr><td>
-							<a href="http://theses.eurasip.org/theses/573/signal-design-for-active-sensing-and/download/"><img src="assets/thesis_cover.png" alt="" width="170px" height="248px" /></a>&nbsp;</td>
-							<td align="left"> <a href="http://theses.eurasip.org/theses/573/signal-design-for-active-sensing-and/download/"> <h3>Ph.D. Thesis (2014)
-									</h3> </a> 
-								<p><a href="http://theses.eurasip.org/theses/573/signal-design-for-active-sensing-and/download/">Signal Design for Active Sensing and Communications</a>  <br />
-										For more information, see <a href="http://uu.diva-portal.org/smash/record.jsf?pid=diva2:741349"> <em>here.</em> </a></p>
-									
-								</td></tr></table>
+<section class="section" id="research" aria-labelledby="research-title">
+<div class="section-head"><h2 id="research-title">Research &amp; selected papers</h2><p>Selected work on the relationship between information, computational difficulty, and the reliability of learning and decision-making.</p></div>
+<div class="research-list">
+<article class="research-item" id="abundance"><h3>Sample abundance and tractability</h3><p>Our work on sample abundance shows how sufficiently rich measurements, even at low resolution, can render difficult optimization constraints redundant, shifting the computational regime from costly optimization to simple linear feasibility.</p>
+<ul class="works"><li><a href="https://doi.org/10.1109/TIT.2024.3422918">Harnessing the Power of Sample Abundance: Theoretical Guarantees and Algorithms for Accelerated One-Bit Sensing</a><span class="meta">A. Eamaz, F. Yeganegi, D. Needell, M. Soltanalian · IEEE Transactions on Information Theory, 2024</span></li><li><a href="https://doi.org/10.1109/TSP.2022.3208430">One-Bit Phase Retrieval: More Samples Means Less Complexity?</a><span class="meta">A. Eamaz, F. Yeganegi, M. Soltanalian · IEEE Transactions on Signal Processing, 2022</span></li></ul></article>
+<article class="research-item" id="certification"><h3>Certification of neural-network training</h3><p>A flat training curve does not establish that an optimizer has found a good solution. Training Under Challenge constructs competing models in a declared class and compares their objective values. Better alternatives expose suboptimality; global optimality-gap bounds require justified coverage conditions.</p>
+<ul class="works"><li><a href="https://arxiv.org/abs/2608.12655">Training Under Challenge: Executable Certificates and Challenge-Closed Optimality for Neural Networks</a><span class="meta">F. Yeganegi, A. Eamaz, M. Soltanalian · arXiv, 2026 (preprint)</span></li><li><a href="https://arxiv.org/abs/2605.02853">Trust, but Verify: Peeling Low-Bit Transformer Networks for Training Monitoring</a><span class="meta">A. Eamaz, F. Yeganegi, M. Soltanalian · arXiv, 2026 (preprint)</span></li></ul></article>
+<article class="research-item" id="sensing"><h3>Radar, sensing, and critical decisions</h3><p>In critical sensing applications, a system must establish what is present and where it is, often under severe time, hardware, and information constraints. We develop waveform design, adaptive sensing, optimization, and inference methods to improve the information available for these decisions, and establish mathematical guarantees for their performance.</p>
+<ul class="works"><li><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ak9fao0AAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ak9fao0AAAAJ:F9fV5C73w3QC">Guaranteed Deep Learning for Reliable Radar Signal Processing</a><span class="meta">S. Khobahi, A. Mostajeran, M. Emadi, P. Wang, M. Soltanalian · IEEE SAM, 2022 (invited)</span></li><li><a href="https://doi.org/10.1109/TSP.2013.2296883">Designing Unimodular Codes Via Quadratic Optimization</a><span class="meta">M. Soltanalian, P. Stoica · IEEE Transactions on Signal Processing, 2014</span></li><li><a href="https://doi.org/10.1109/ISIT.2015.7282472">Beyond Semidefinite Relaxation: Basis Banks and Computationally Enhanced Guarantees</a><span class="meta">M. Soltanalian, B. Hassibi · ISIT, 2015</span></li></ul><p class="meta" style="margin-top:.65rem">See also <a href="#radar-book">Signal Design for Modern Radar Systems</a> (2022).</p></article>
+<article class="research-item" id="precision"><h3>Quantized neural computation</h3><p>When can greater depth compensate for limited arithmetic precision? We study this tradeoff for quantized residual computation, including structural limits and the effect of rounding. Related work develops behavioral certificates for quantized language models, bounding the risk of prediction changes under permitted weight modifications and the population loss of the deployed model.</p>
+<ul class="works"><li><a href="https://arxiv.org/abs/2607.23390">When Can Depth Replace Precision? A Resource Theory of Quantized Neural Computation</a><span class="meta">M. Soltanalian · arXiv, 2026 (preprint)</span></li><li><a href="https://arxiv.org/abs/2609.37887">Behavioral Capacity Certificates for Quantized Language Models</a><span class="meta">A. Eamaz, M. Soltanalian · arXiv, 2026 (preprint)</span></li></ul></article>
+<article class="research-item" id="adaptation"><h3>Learning and adaptation at scale</h3><p>We develop efficient methods for adapting language models, including RoCoFT, which updates selected rows or columns of weight matrices. On Llama 2–13B, its column-update variant outperformed LoRA on 10 of 13 reasoning benchmarks while using 45% fewer trainable parameters. Our related analysis of regularized fine-tuning connects adaptation performance and layer selection to the spectrum of the neural tangent kernel.</p>
+<ul class="works"><li><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/becc00fe2e0ade58213cff16a166fa25-Abstract-Conference.html">Linearization Explains Fine-Tuning in Large Language Models</a><span class="meta">Z. Rahimi Afzal, T. Esmaeilbeig, M. Soltanalian, M. I. Ohannessian · NeurIPS, 2025</span></li><li><a href="https://aclanthology.org/2025.acl-long.1293/">RoCoFT: Efficient Finetuning of Large Language Models with Row-Column Updates</a><span class="meta">M. Kowsher, T. Esmaeilbeig, C.-N. Yu, C. Chen, M. Soltanalian, N. Yousefi · ACL, 2025</span></li></ul><p class="meta" style="margin-top:.65rem"><a href="https://github.com/Kowsher/RoCoFT">RoCoFT implementation</a></p></article>
+<article class="research-item" id="intelligence"><h3>Mathematical foundations of intelligence</h3><p>Why can finite intelligence succeed without retaining a complete description of its environment? I study the minimum information that must be retained to preserve the quality of decisions across families of future tasks. Shared structure among tasks, rather than the difficulty of each task alone, can determine this information requirement.</p>
+<ul class="works"><li><a href="https://arxiv.org/abs/2611.18538">Why Finite Intelligence Works in an Infinite World: A Mathematical Theory</a><span class="meta">M. Soltanalian · arXiv, 2026 (preprint)</span></li></ul></article>
 
 </div>
-<hr class="sep">
-  </div>
+<p class="section-note" style="margin-top:1.4rem">For the complete publication list, see <a href="https://scholar.google.com/citations?hl=en&amp;user=ak9fao0AAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a>.</p>
 </section>
+<section class="section" id="venture" aria-labelledby="venture-title"><div class="section-head"><h2 id="venture-title">Entrepreneurship</h2><div><p>I founded <a href="https://ai-certified.org/">AI-CERTIFIED.ORG</a> to make verification an integral part of AI training. Its public-beta PyTorch toolkit lets researchers assess the quality of a training result by testing competing models on their own data.</p></div></div></section>
+<section class="section" id="books" aria-labelledby="books-title"><div class="section-head"><h2 id="books-title">Books &amp; other work</h2><p>Technical writing and explorations in mathematics and visual art.</p></div>
+<div class="book-grid">
+<article class="book" id="radar-book"><img src="assets/book_radar.png" alt="" loading="lazy" width="170" height="248"><div><p class="meta">Artech House · 2022</p><h3><a href="https://us.artechhouse.com/Signal-Design-for-Modern-Radar-Systems-P2306.aspx"><em>Signal Design for Modern Radar Systems</em></a></h3><p>With M. Alaee-Kerahroodi, P. Babu, and M. R. Bhavani Shankar. Optimization and waveform design for modern radar.</p></div></article>
+<article class="book"><img src="assets/rosa_universalis.png" alt="" width="1000" height="1000" loading="lazy"><div><p class="meta">2025</p><h3><a href="https://www.amazon.com/dp/B0FLQ4KJW3"><em>Rosa Universalis: A Modern Codex of Rose Windows</em></a></h3><p>Original geometric designs informed by signal processing and symmetry. <a href="sp_perspective.pdf">A signal processing perspective</a> · <a href="https://www.youtube.com/@VisualZentube">VisualZen</a>.</p></div></article>
 
-
-<section class="section"><div class="container">
-<div class="kicker"><h2>News / Quick Access</div>
-	
-
-
- 			
- 			
-
- 	
- 	
- 			
- 			<!-- 1/2023: An overview of our research---<a href="https://www.youtube.com/watch?v=oEouihVgSlc">Talk</a> at Arizona State University. </p>
- 				<p>   </p> -->
- 			
- 				7/2025: Grateful to be joining the <a href="https://giesbusiness.illinois.edu/origin-ventures-office-of-entrepreneurship/felp">2025 Faculty Entrepreneurial Leadership Program (FELP) Cohort</a>.</a>
- 		<p>   </p>
- 		
- 		
- 			8/2024: Honored to serve the radar signal processing community as an Associate Editor for <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7">IEEE Transactions on Aerospace and Electronic Systems</a>.</a>
- 		<p>   </p>
- 	
- 
-8/2022: Received new ONR grant supporting our high-risk high-reward fundamental research to make "Data-Aware Guarantees for Mathematical Optimization and Learning" possible. </p>
-<p>   </p>
-
-11/2021: Elected as member of the <a href="https://signalprocessingsociety.org/community-involvement/sensor-array-and-multichannel/sam-tc-home">Sensor Array and Multichannel (SAM) Technical Committee</a> of the IEEE Signal Processing Society. 
-<p>   </p>
-
-<!-- <p>  10/2021: Great news on being named a finalist for the <a href="https://www.arl.army.mil/xtechsearch/competitions/xtechhbcu.html">xTechHBCU Faculty Prize</a>. Competition ongoing!
-<p>   </p> -->
-
-
-
-5/2021: Honored to serve the signal processing community as an Associate Editor for <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=78">IEEE Transactions on Signal Processing</a>.</a>
-<p>   </p>
-
-
-4/2021: Truly appreciate the continued support and new Gift Funding from <a href="https://www.merl.com/">Mitsubishi Electric Research Laboratories</a>.</a>
-<p>   </p>
-
-
-2/2021: Received a UIC-TEC Office of Global Engagement Seed Award for collaborative research.</a>
-<p>   </p>
-
-2/2021: Honored to serve the Chicago signal processing community as the IEEE SPS Chapter Chair.</a>
-<p>   </p>
-
-5/2020: Truly appreciate the Gift Funding from <a href="https://www.merl.com/">Mitsubishi Electric Research Laboratories</a>.
-<p>   </p>
-
-11/2019: Will serve as a Technical Area Chair for the 2020 <a href="https://www2.securecms.com/Asilomar2020/Asilomar2020_ProgramGuide.pdf">Asilomar Conference</a>.
-<p>   </p>
-
-3/2019: Received the <a href="https://today.uic.edu/uic-dpi-cycle-1-seed-funding-program-awards">UIC Discovery Partners Institute (DPI) Seed Funding Program Award</a>.
-<p>   </p>
-
-9/2018: Received the 2018 <a href="http://www.eurasip.org/index.php?option=com_content&view=article&id=121&Itemid=124">European Signal Processing Association (EURASIP) Best PhD Award</a>.
-<p>   </p>
-
-7/2018: Received new <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1809225">3-year NSF grant</a> supporting our research efforts on "Waveform Design and Processing for Next-Generation Radar Systems".</p>
-<p>   </p>
-
-<!-- 5/2018: Visited and gave invited talks at the University of Science and Technology of China (USTC), Tsinghua University, and Fudan University, during May and June 2018.
-<p>   </p> -->
-
-5/2018: Received the 2018 UIC College of Engineering Research Award.
-<p>   </p>
-
-12/2017: Received the 2017 <a href="https://signalprocessingsociety.org/newsletter/2018/01/2017-ieee-signal-processing-society-awardees">IEEE Signal Processing Society (SPS) Young Author Best Paper Award</a>.</p>
-<p>   </p>
-
-5/2017: Received new <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1704401&HistoricalAwards=false">4-year NSF grant</a> supporting our research efforts on "Low-Resolution Sampling with Generalized Thresholds".</p>
-<p>   </p>
-
-9/2017: Received new DoD instrumentation grant- "Three Birds with One Stone: High-Frequency Instrumentation for Semiconductor Device Characterization, Radar and Communication System Measurements".</p>
-<p>   </p>
-
-<!--<p> Available:  <a href="announcement.pdf">Ph.D. Positions in Signal Processing.</a>  <p>
-
-<p> <a href="EUSIPCO_session.pdf">EUSIPCO'16 Special Session,</a> "Towards Next-Generation Radar Systems: Adaptivity, Agility, and Reliability". <p>
-
-<!-- <p> <a href="http://www.icassp2016.org/Tutorials.asp">ICASSP'16 Tutorial,</a> "Optimization Techniques for Alphabet-Constrained Signal Design", to be given in Shanghai. <p> -->
-
-
-
-
-<p> Teaching:  <a href="ECE531">ECE 531- Detection and Estimation Theory.</a> </p>
-<p> Teaching:  <a href="ECE516">ECE 516- Adaptive Digital Filters.</a> </p>
-<p> Teaching:  <a
-		 href="https://uic.blackboard.com/">ECE 418- Statistical Digital Signal Processing.</a> </p>
-<p> Teaching:  <a href="https://uic.blackboard.com/">ECE 317- Digital Signal Processing (DSP) I.</a> </p>
-
-<p>   </p>		
-
- 			</ul>
- 		</div>
- 	</div></section>
- 
- 
-<footer>
-  <div class="container footer-grid">
-  	
-  	
-  	  
-  	<div>
-  		<div class="kicker">Contact</div>
-  		<p>University of Illinois Chicago — ECE<br>851 S Morgan St, Chicago, IL 60607<br>Office: SEO 1031<br>Email: msol@uic.edu</p>
-  					
-  				</div>
-  				<div>
-  					
-  					
-  					
-  	<div class="logo-strip">
-  		<a class="logo" href="https://ece.uic.edu/" target="_blank" rel="noopener">ECE @ UIC</a>
-  		<a class="logo" href="https://cs.uic.edu/" target="_blank" rel="noopener">CS @ UIC</a>
-  		<a class="logo" href="https://wave-opt.lab.uic.edu/" target="_blank" rel="noopener">WaveOPT Lab</a>
-  		<a class="logo" href="https://scholar.google.com/citations?user=ak9fao0AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-  		<a class="logo" href="https://us.artechhouse.com/Signal-Design-for-Modern-Radar-Systems-P2306.aspx" target="_blank" rel="noopener">Radar Textbook</a>
-  		<a class="logo" href="https://www.youtube.com/@VisualZentube" target="_blank" rel="noopener">VisualZen</a>
-  	</div>
-
-</footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
-
-<script src="js/main.js"></script>
-</body></html>
+<article class="book"><img src="assets/thesis_cover.png" alt="" loading="lazy" width="170" height="248"><div><p class="meta">Uppsala University · 2014</p><h3><a href="https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A741349"><em>Signal Design for Active Sensing and Communications</em></a></h3><p>Doctoral thesis, advised by Peter (Petre) Stoica. <a href="https://theses.eurasip.org/theses/573/signal-design-for-active-sensing-and/download/">Thesis PDF</a>.</p></div></article>
+</div></section>
+<section class="section record" id="about" aria-labelledby="about-title"><div class="section-head"><h2 id="about-title">About</h2></div>
+<div class="two-col"><div><h3>Background</h3><p>I joined UIC in 2015, following research appointments at <a href="https://www.caltech.edu/">Caltech</a> with Babak Hassibi and at the Interdisciplinary Centre for Security, Reliability and Trust (SnT), University of Luxembourg, with Björn Ottersten. I received my Ph.D. from <a href="https://www.uu.se/en">Uppsala University</a> under Peter (Petre) Stoica and my undergraduate degree from Sharif University of Technology.</p></div><div><h3>Professional service</h3><p>I chair the <a href="https://ewh.ieee.org/r4/chicago/sps/">IEEE Signal Processing Society Chicago Chapter</a> and have served on the Society’s <a href="https://signalprocessingsociety.org/community-involvement/sensor-array-and-multichannel/sam-tc-home">Sensor Array and Multichannel Technical Committee</a> and as an associate editor of three scientific journals, including <em>IEEE Transactions on Signal Processing</em>. My reviewer and program committee service includes NeurIPS, ICLR, and AISTATS. I have also served on grant review panels and reviewed proposals for multiple national and international research funding agencies.</p></div></div>
+<div class="folds"><details><summary>Selected news (2017–2026)</summary><div><ul class="archive">
+<li><time datetime="2026">2026</time><span>Promoted to Professor at the University of Illinois Chicago.</span></li>
+<li><time datetime="2025-07">Jul 2025</time><span>Selected for the <a href="https://giesbusiness.illinois.edu/origin-ventures-office-of-entrepreneurship/felp">Faculty Entrepreneurial Leadership Program</a>.</span></li>
+<li><time datetime="2024-08">Aug 2024</time><span>Appointed Associate Editor, IEEE Transactions on Aerospace and Electronic Systems.</span></li>
+<li><time datetime="2022-08">Aug 2022</time><span>ONR award on data-aware guarantees for mathematical optimization and learning.</span></li>
+<li><time datetime="2021-11">Nov 2021</time><span>Elected to the IEEE SPS <a href="https://signalprocessingsociety.org/community-involvement/sensor-array-and-multichannel/sam-tc-home">Sensor Array and Multichannel Technical Committee</a>.</span></li>
+<li><time datetime="2021-05">May 2021</time><span>Appointed Associate Editor, IEEE Transactions on Signal Processing.</span></li>
+<li><time datetime="2021-04">Apr 2021</time><span>New gift funding from <a href="https://www.merl.com/">Mitsubishi Electric Research Laboratories</a>.</span></li>
+<li><time datetime="2021-02">Feb 2021</time><span>UIC–TEC Office of Global Engagement Seed Award.</span></li>
+<li><time datetime="2021-02">Feb 2021</time><span>Appointed IEEE SPS Chicago Chapter Chair.</span></li>
+<li><time datetime="2020-05">May 2020</time><span>Gift funding from Mitsubishi Electric Research Laboratories.</span></li>
+<li><time datetime="2019-11">Nov 2019</time><span>Technical Area Chair for the 2020 <a href="https://www2.securecms.com/Asilomar2020/Asilomar2020_ProgramGuide.pdf">Asilomar Conference</a>.</span></li>
+<li><time datetime="2019-03">Mar 2019</time><span><a href="https://today.uic.edu/uic-dpi-cycle-1-seed-funding-program-awards">UIC Discovery Partners Institute Seed Funding Program Award</a>.</span></li>
+<li><time datetime="2018-09">Sep 2018</time><span>Best PhD Award, European Association for Signal Processing (EURASIP).</span></li>
+<li><time datetime="2018-07">Jul 2018</time><span><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1809225">NSF grant</a> on next-generation radar waveform design and processing.</span></li>
+<li><time datetime="2018-05">May 2018</time><span>UIC College of Engineering Research Award.</span></li>
+<li><time datetime="2017-12">Dec 2017</time><span><a href="https://signalprocessingsociety.org/newsletter/2018/01/2017-ieee-signal-processing-society-awardees">IEEE SPS Young Author Best Paper Award</a>.</span></li>
+<li><time datetime="2017-09">Sep 2017</time><span>DoD instrumentation grant: high-frequency instrumentation for semiconductor device characterization, radar, and communication system measurements.</span></li>
+<li><time datetime="2017-05">May 2017</time><span><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1704401">NSF grant</a> on low-resolution sampling with generalized thresholds.</span></li>
+</ul></div></details></div>
+</section>
+<section class="section" id="teaching" aria-labelledby="teaching-title"><div class="section-head"><h2 id="teaching-title">Teaching</h2><div class="record"><p class="teaching-intro">Courses at the University of Illinois Chicago.</p>
+<ul class="course-list" role="list">
+<li><span class="course-code">ECE 531 —</span> <span>Detection and Estimation Theory</span></li>
+<li><span class="course-code">ECE 516 —</span> <span>Adaptive Digital Filters</span></li>
+<li><span class="course-code">ECE 418 —</span> <span>Statistical Digital Signal Processing</span></li>
+<li><span class="course-code">ECE 317 —</span> <span>Digital Signal Processing I</span></li>
+</ul><p class="course-materials"><a href="https://uic.blackboard.com/">UIC Blackboard</a> (course materials)</p></div></div></section>
+<section class="section" id="contact" aria-labelledby="contact-title"><div class="section-head"><h2 id="contact-title">Contact</h2><div><p class="contact-intro">For research inquiries, including potential collaborations and graduate research, please contact me by email.</p>
+<address><span class="contact-institution">University of Illinois Chicago</span>Department of Electrical and Computer Engineering<span class="contact-postal">851 S. Morgan Street, SEO 1031<br>Chicago, IL 60607</span><a class="contact-email" href="mailto:msol@uic.edu">msol@uic.edu</a></address><ul class="links"><li><a href="https://ece.uic.edu/">UIC ECE</a></li><li><a href="https://cs.uic.edu/">UIC CS</a></li><li><a href="https://wave-opt.lab.uic.edu/">WaveOPT Lab</a></li></ul></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><span>Mojtaba Soltanalian · University of Illinois Chicago</span><a class="back" href="#top">Back to top</a></div></footer>
+</body>
+</html>
